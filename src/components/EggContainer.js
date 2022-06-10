@@ -14,7 +14,7 @@ const EggContainer = (props) => {
 
 const mapStateToProps = state => {
     return {
-        numOfEggs: state.numOfEggs
+        numOfEggs: state.egg.numOfEggs
     }
 }
 

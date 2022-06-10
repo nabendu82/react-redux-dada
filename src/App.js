@@ -1,6 +1,9 @@
 import { Provider } from 'react-redux';
 import './App.css';
 import EggContainer from './components/EggContainer';
+import HookChickenContainer from './components/HookChickenContainer';
+import HookEggContainer from './components/HookEggContainer';
+import UserContainer from './components/UserContainer';
 import store from './redux/store';
 
 function App() {
@@ -8,6 +11,9 @@ function App() {
     <div className="App">
       <Provider store={store}>
         <EggContainer name="eggStore"/>
+        <HookEggContainer />
+        <HookChickenContainer />
+        <UserContainer />
       </Provider>
     </div>
   );
